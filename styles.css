@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-image {
+    width: 100px; /* Adjust the size of the image as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.search-filter-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#searchBox, #filterBox {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+#searchBox {
+    width: 200px;
+}
+
+#filterBox {
+    width: 150px;
+}
