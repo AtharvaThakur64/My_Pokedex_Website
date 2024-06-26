@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
+    <title>Ultimate Pokedex</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <div class="header-content">
+            <img src="pokemon.png" alt="Pokedex Image" class="header-image">
+            <div>
+                <h1>Welcome to the Ultimate Pokedex</h1>
+                <p>Your comprehensive guide to all Pokémon, from Kanto to Galar!</p>
+            </div>
+        </div>
+    </header>
+    <div class="search-filter-container">
+        <input type="text" id="searchBox" placeholder="Search...">
+        <select id="filterBox">
+            <option value="">Filter by</option>
+            <option value="option1">Fire type</option>
+            <option value="option2">Water type</option>
+            <option value="option3">Grass type</option>
+        </select>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
