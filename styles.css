@@ -1,3 +1,36 @@
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images horizontally */
+    gap: 10px; /* Adjust the gap between the images as needed */
+}
+
+.image-container div {
+    text-align: center; /* Center the text below each image */
+    flex: 0 0 calc(25% - 20px); /* Ensure 4 images per row, accounting for gap */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px; /* Add padding around each div */
+    border: 1px solid #ccc; /* Add a border around each div */
+    border-radius: 8px; /* Optional: Add rounded corners to the border */
+    background-color: #f9f9f9; /* Optional: Add a background color to the divs */
+}
+
+.image-container img {
+    max-width: 100px; /* Adjust the size of the images as needed */
+    height: auto;
+    border: 2px solid #000; /* Add a border to the images */
+    padding: 5px; /* Add padding inside the border */
+}
+
+.image-container p {
+    font-weight: bold; /* Make the text bold */
+    margin: 5px 0; /* Adjust the margin to add space below the text */
+}
+
+.pokemon-type {
+    color: #666; /* Optional: Change the color of the type text */
+    font-style: italic; /* Optional: Make the type text italic */
+}
 body {
     font-family: Arial, sans-serif;
 }
@@ -14,7 +47,7 @@ header {
 }
 
 .header-image {
-    width: 200px; 
+    width: 200px; /* Adjust the size of the image as needed */
     height: auto;
     margin-bottom: 10px;
 }
