@@ -28,17 +28,29 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
 // JavaScript for search functionality
 document.getElementById("searchBox").addEventListener("input", function() {
-    const searchTerm = this.value.toLowerCase();
+    filterPokemon();
+});
+
+document.getElementById("filterBox").addEventListener("change", function() {
+    filterPokemon();
+});
+
+function filterPokemon() {
+    const searchTerm = document.getElementById("searchBox").value.toLowerCase();
+    const filterType = document.getElementById("filterBox").value.toLowerCase();
     const allPokemonDivs = document.querySelectorAll(".image-container div");
 
     allPokemonDivs.forEach(div => {
         const pokemonName = div.querySelector("p").textContent.toLowerCase();
-        if (pokemonName.includes(searchTerm)) {
+        const pokemonType = div.querySelector(".pokemon-type").textContent.toLowerCase();
+
+        if ((pokemonName.includes(searchTerm) || searchTerm === '') && (pokemonType.includes(filterType) || filterType === '')) {
             div.style.display = "block";
         } else {
             div.style.display = "none";
         }
     });
-});
+}
