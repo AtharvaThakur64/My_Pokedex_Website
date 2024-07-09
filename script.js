@@ -1,4 +1,4 @@
-// JavaScript for modal functionality
+
 function openModal(imageSrc, name, type) {
     const modal = document.getElementById("myModal");
     const modalImage = document.getElementById("modalImage");
@@ -12,7 +12,7 @@ function openModal(imageSrc, name, type) {
     modal.style.display = "block";
 }
 
-// Get the <span> element that closes the modal
+
 const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
@@ -29,7 +29,7 @@ window.onclick = function(event) {
     }
 }
 
-// JavaScript for search functionality
+// search functionality
 document.getElementById("searchBox").addEventListener("input", function() {
     filterPokemon();
 });
@@ -37,7 +37,7 @@ document.getElementById("searchBox").addEventListener("input", function() {
 document.getElementById("filterBox").addEventListener("change", function() {
     filterPokemon();
 });
-
+// filter function
 function filterPokemon() {
     const searchTerm = document.getElementById("searchBox").value.toLowerCase();
     const filterType = document.getElementById("filterBox").value.toLowerCase();
