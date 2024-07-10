@@ -170,3 +170,53 @@ header {
 .card a:hover {
     text-decoration: underline;
 }
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header-image {
+    width: 150px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.types-content {
+    padding: 20px;
+}
+
+.type-image {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.type-image:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1em;
+    color: #333;
+}
+

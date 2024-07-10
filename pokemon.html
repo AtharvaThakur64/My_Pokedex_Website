@@ -6,32 +6,31 @@
     <title>Pokémon Types - Ultimate Pokedex</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light #f0f8ff;">
-            <a class="navbar-brand" href="#">Pokedex    </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Pokedex</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="main.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pokemon.html">Pokémon<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Aboutus.html">About us</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="main.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pokemon.html">Pokémon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
+        </nav>
         <div class="header-content">
             <img src="images/pok.png" alt="Pokedex Image" class="header-image">
             <div>
@@ -39,37 +38,36 @@
             </div>
         </div>
     </header>
-    <div class="types-content">
-      <div>
-        <img src="images/firetype.png" alt="">
-      <h2>Fire Type</h2>
-      <p>Fire-type Pokémon are strong and fiery, excelling in hot environments. They are strong against Grass, Ice, Bug, and Steel types but weak against Water, Rock, and Fire types.</p>
-      </div>
-      <div>
-        <img src="images/grasstype.png" alt="">
-      <h2>Grass Type</h2>
-      <p>Grass-type Pokémon are known for their regenerative abilities and connection to nature. They are strong against Water, Ground, and Rock types but weak against Fire, Ice, Poison, Flying, and Bug types.</p>
-      </div>
-      <div>
-        <img src="/images/poisontype.png" alt="">
-      <h2>Poison Type</h2>
-      <p>Poison-type Pokémon use toxic attacks to wear down their opponents. They are strong against Grass and Fairy types but weak against Ground and Psychic types.</p>
-      </div>
-      <div>
-        <img src="/images/flying.png" alt="">
-      <h2>Flying Type</h2>
-      <p>Flying-type Pokémon are agile and excel in aerial battles. They are strong against Grass, Fighting, and Bug types but weak against Electric, Ice, and Rock types.</p>
-      </div>
-      <div>
-
-        <h2>Dragon Type</h2>
-        <img src="/images/dragontype.png" alt="">
-<p>Dragon-type Pokémon are powerful and often have legendary status. They are strong against Dragon types but weak against Ice, Dragon, and Fairy types.</p>
-      </div>
-    
-
-
-        
+    <div class="types-content container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/firetype.png" alt="Fire Type" class="type-image">
+                <h2>Fire Type</h2>
+                <p>Fire-type Pokémon are strong and fiery, excelling in hot environments. They are strong against Grass, Ice, Bug, and Steel types but weak against Water, Rock, and Fire types.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/grasstype.png" alt="Grass Type" class="type-image">
+                <h2>Grass Type</h2>
+                <p>Grass-type Pokémon are known for their regenerative abilities and connection to nature. They are strong against Water, Ground, and Rock types but weak against Fire, Ice, Poison, Flying, and Bug types.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/poisontype.png" alt="Poison Type" class="type-image">
+                <h2>Poison Type</h2>
+                <p>Poison-type Pokémon use toxic attacks to wear down their opponents. They are strong against Grass and Fairy types but weak against Ground and Psychic types.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/flying.png" alt="Flying Type" class="type-image">
+                <h2>Flying Type</h2>
+                <p>Flying-type Pokémon are agile and excel in aerial battles. They are strong against Grass, Fighting, and Bug types but weak against Electric, Ice, and Rock types.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/dragontype.png" alt="Dragon Type" class="type-image">
+                <h2>Dragon Type</h2>
+                <p>Dragon-type Pokémon are powerful and often have legendary status. They are strong against Dragon types but weak against Ice, Dragon, and Fairy types.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
